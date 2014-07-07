@@ -3,21 +3,17 @@
 
   Sends a tweet via a Twitter account using Temboo from an Arduino Yun.
 
-  Check out the latest Arduino & Temboo examples and support docs at http://www.temboo.com/arduino
-
-  A Temboo account and application key are necessary to run.
-  If you don't already have one, you can register for a free Temboo account at
-  http://www.temboo.com
-
-  In order to run this sketch, you'll need to register an application using
-  the Twitter dev console at https://dev.twitter.com. Note that since this
-  sketch creates a new tweet, your application will need to be configured with
-  read+write permissions. After creating the app, you'll find OAuth credentials
-  for that application under the "OAuth Tool" tab. Substitute these values for
-  the placeholders below.
+  See my Instructable at: http://www.instructables.com/id/E9EOCASGOTSYROS/ for details
 
   This example assumes basic familiarity with Arduino sketches, and that your Yun is connected
   to the Internet.
+  
+  When Arduino is powered on, a single tweet will be sent. If tweet can't be sent, it will retry over and over
+  until successful.  Once it is successful once, it will stop sending tweets.
+  
+  The message is randomized to prevent twitter from blocking your tweets (they don't like duplicates)
+  
+  Please read more about this and see my other projects at http://manganlabs.com
 
 */
 
